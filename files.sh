@@ -57,4 +57,21 @@ file $file_name
 # Search content inside a file / output >
 grep [-r for more files] "$content"
 
+## File links >
+# Create hard-link >
+ln $original_file $hard_link
+# Create symbolic-link >
+ln -s $original_file $symbolic_link
+# Remove hard/symbolic-link >
+rm $link_name
+# Copy symbolic-link >
+cp -P $symbolic_link $new_link
+# List all links for a file >
+ls -l $original_file
+# Update links >
+rm $symbolic_link
+ln -s $new_file $symbolic_link
+# Find broken link >
+find -L $dir -type l
+
 
