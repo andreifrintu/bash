@@ -28,18 +28,6 @@ rm $file_name
 rmdir $dir_name
 rm -r $dir_name
 
-# Change permissions of directory & file >
-chmod $perm_code $file_name/$dir_name
-# Change the owner of directory & file >
-chown $owner $file_name/$dir_name
-## Permission codes >
--777: _rwxrwxrwx
--755: _rwxr-xr-x
--700: _rwx------
--666: _rw-rw-rw-
--644: _rw-r--r--
--600: _rw-------
-
 ## Display content of a file >
 # All content >
 cat $file_name
