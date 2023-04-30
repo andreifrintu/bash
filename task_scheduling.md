@@ -14,3 +14,11 @@
 **Set task triggers**
 **Configure task action**
 **Save the task and exit panel**
+
+### Display a message
+**Create command.bat file** >
+`@echo off`
+`msg * "$message"`
+\* = user account (all)
+**$message** = text to display
+ 
