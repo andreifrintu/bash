@@ -1,0 +1,114 @@
+RAM memory:
+- Dynamic RAM: mid 90’s, main memory, gradually discharges energy so must be refreshed to mantain the stored data in the chip
+- Static RAM: requires constant power, low power consumption, used as cache memory, much faster and expensive than DRAM
+- Synchronous Dynamic RAM: DRAM that operates in synchronization with the memory bus, can process overlapping instructions in parallel (read before write completed), higher transfer rates
+- Double Data Rate SDRAM: twice as fast as SDRAM, supports two writes and two reads per CPU clock cycle, 184 pin connector with a single notch, lower voltage 2.5 V, 200 Mhz, family DDR - DDR4
+- DDR2 SDRAM: twice as fast as SDRAM, higher clock speed than DDR 533 Mhz, improves performance by decreasing noise and crosstalk between signal wires, 240 pin connector, lower voltage 1.8 V
+- DDR3 SDRAM: double the clock rate of DDR2 and expanded bandwidth, higher clock speed than DDR2 800 Mhz, generates less heat, 240 pin connector, less power 1.5 V
+- DDR4 SDRAM: quadruples maximum DDR3 storage capacity, higher clock speed than DDR3 1600 Mhz, 288 pin connector, less power 1.2 V, compatible with Error Correting Code Memory (ECC) to detect multiple bits erros
+- GDDR SDRAM: video graphic card memory, used in conjunction with a dedicated GPU, family GDDR - GDDR5, each member improving performance and power consumption, processes massive amounts of data but not necessarily at the fastest speeds
+
+RAID (Redundant Array of Independent Disks):
+- Functions:
+Striping - data distributed across multiple drives, increased performance, failure of a single drive loses all data
+Mirroring - duplicate data on one or more other drives, redundancy in case of a single drive failure, enables reconstruction of data
+	Parity - basic error checking and fault tolerance by storing checksums separately from data, enables reconstruction of data
+	Double Parity - fault tolerance up to two failed drives
+- Levels:
+	0 (zero): minimum number of drives 2, Striping, Performance and Capacity - all data lost if one drive fails
+	1 (one): minimum number of drives 2, Mirroring, Performance and Reliability - capacity is half the total drive size
+	5 (five): minimum number of drives 3, Striping and Parity, Performance, Reliability and Capacity - it takes time to rebuild array if a drive fails
+	6 (six): minimum number of drives 3, Striping and Double Parity, Performance, Reliability (2 failures) and Capacity - it takes time to rebuild array if drives fail
+	10, 0 + 1 (ten): minimum number of drives 4, Mirroring and Striping, Performance, Capacity and High Reliability - capacity is half the total drive size
+Network ports: 
+- 20 & 21, TCP, FTP (data + control)
+- 22, TCP, SSH
+- 23, TCP, Telnet
+- 25, TCP, SMTP
+- 53, TCP + UDP, DNS
+- 67 & 68, UDP, DHCP (server + client)
+- 69, UDP, TFPT
+- 80, TCP, HTTP
+- 110, TCP, POP3
+- 137-139, TCP + UDP, NetBios / NetBT
+- 143, TCP, IMAP
+- 161 & 162, UDP, SNMP
+- 389, TCP + UDP, LDAP
+- 427, TCP + UDP, SLP
+- 443, TCP + UDP, HTTPS
+- 445, TCP, SMB / CIFS
+- 548, TCP, AFP
+- 3389, TCP + UDP, RDP
+ 
+802.11 standards:
+- 802.11a, 54 Mbps + 35 m + 5 Ghz
+- 802.11b, 11 Mbps + 35 m + 2.4 Ghz
+- 802.11g, 54 Mbps + 38 m + 2.4 Ghz + backwards compatible with 802.11b
+- 802.11n, 600 Mbps + 70 m + 2.4 / 5 Ghz + backwards compatible with 802.11a/b/g
+- 802.11ac, 1.3 Gbps + 35 m + 5 Ghz + backwards compatible 802.11a/n
+Twisted-pair wire schemes:
+T568A											          T568B
+                                                               
+
+Network addresses:
+- IPv4 address: 32 bit, decimal: 192.168.100.8 (determined by subnet mask)
+- Subnet mask: 32 bit, decimal: 255.255.255.0 (1 bits for network and 0 bits for host)
+- IPv6 address: 128 bit, hexadecimal: 2001:0db8:0000:1111:0000:0000:0000:0200, compressed by 2 rules: omit leading 0’s: 2001:db8:0:1111:0:0:0:200 and omit all 0 segments: 2001:db8:0:1111::200
+- MAC address: 48 bit, hexadecimal: 2C-F0-5D-9B-58-38 (24 bits for OUI and 24 bits for  NIC)
+- DHCP error / APIPA: 32 bit, decimal: 169.254.0.0 to 169.254.255.255
+ACPI power states:
+- S0: computer is on and CPU is running
+- S1: CPU and RAM are still receving power, unused devices are powered down
+- S2: CPU is off, but RAM is refreshed 
+- S3: CPU is off, RAM is set to a slow refresh rate, often called save to RAM, suspend mode
+- S4: CPU and RAM are off, contents have been saved to a temporary file on the drive, often called save to disk, hibernate mode
+- S5: computer is off
+Celullar communication standars:
+- 1G: introduced in 80’s, analog standard prone to noise and interference which made it difficult to get a clear voice signal.
+- 2G: introduced in 90’s, digital standard, 1 Mbps and higher call quality, Short Message Service (SMS) and Multimedia Message Service (MMS)
+- 3G: introduced in late 90’s, 2 Mbps, has internet access, video calls and streaming and picture sharing
+- 4G: introduced in late 00’s, 100 Mbps and up to 1  Gbps, commonly available with Long Term Evolution (LTE)
+- 5G: introduced in 2019, latest standard, 20 Gbps and more efficient than previous standards
+Printer parts:
+- Inkjet printer parts: Ink Cartridges, Paper, Print Head, Roller, Feeder, Duplexing Assembly, Carriage, Belt
+- Laser printer parts: Imaging Drum, Toner Cartridge, Paper, Fuser Assembly, Transfer Rollers, Pickup Rollers, Duplexing Assembly - Printing: Processing, Charging, Exposing, Developing, Transferring, Fusing, Cleaning
+- 3D printer parts: Filament, Feeder, Hotend Nozzle, Axis, Print Bed
+
+Cloud services:
+- Software as a Service (SaaS): cloud provider provides access to services on a subscription basis, users acces the software from the browser, includes Saleforces and customer management relationship (CRM) software - MS Office 365, SharePoint and G Suite
+- Platform as a Service (PaasS): cloud provider provides access to OS’s, programming languages, development libraries to develop, test and deliver applications - AWS, Oracle Cloud, MS Azure and Google Cloud Platform
+- Infrastructure as a Service (IaaS): cloud provider manages the network and provides access to network equipment, virtualization network services, storage, software and supporting the network infrastructure, pay for usage on-demand, scalable - AWS, DigitalOcean, MS Azure
+- IT as a Service (ITaaS): cloud provider extends the capability of IT, available on demand and delivered economically to any device anywhere without compromising security of function
+OS terms and functions:
+- Multi User: two or more users have individual accounts that allow them to work with programs and peripheral devices at the same time.
+- Multitasking: computer is capable of operating multiple applications at the same time
+- Multiprocessing: OS can support two or more CPU’s
+- Multithreading: a program can be broken into multiple smaller parts that are loaded as needed, allows different parts to be run at the same time
+OSI model:
+1. Physical Layer - transmits raw bit stream over the physical medium
+2. Data Link Layer - defines the format of data on the network
+3. Network Layer - decides which physical path the data will take
+4. Transport Layer - transmits data using transmission protocols TCP & UDP
+5. Session Layer - mantains connections and is responsible for controlling ports and sessions
+6. Presentation Layer - ensures that data is a usable format and is where data encryption occurs
+7. Application Layer - human-computer interaction layer, where applications can access the network services
+TCP/IP model:
+- Network Access = OSI Layers 1 & 2
+- Internet = OSI Layer 3
+- Transport = OSI Layer 4
+- Application = OSI Layers 5, 6 & 7
+•	Class A: First Octet Value 0-126
+•	Class B: First Octet Value 128-191
+•	Class C: First Octet Value 192-233
+•	Class D: First Octet Value 224-239
+•	Class E: First Octet Value 240-255
+•	Class A networks use a default subnet mask of 255.0.0.0 and have 0-127 as their first octet. The address 10.52.36.11 is a class A address. Its first octet is 10, which is between 1 and 126, inclusive.
+•	Class B networks use a default subnet mask of 255.255.0.0 and have 128-191 as their first octet. The address 172.16.52.63 is a class B address. Its first octet is 172, which is between 128 and 191, inclusive.
+•	Class C networks use a default subnet mask of 255.255.255.0 and have 192-223 as their first octet. The address 192.168.123.132 is a class C address. Its first octet is 192, which is between 192 and 223, inclusive.
+
+# t568a image
+
+# t568b image
+
+Classless Inter-Domain Routing: 
+# ip table image
