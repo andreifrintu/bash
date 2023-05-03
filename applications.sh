@@ -11,7 +11,7 @@ sudo apt-get remove $package_name
 
 # Search for an application >
 sudo apt-cache search $package_name
-# List all installed applications >
+# List all installed packages >
 sudo dpkg --list
 # Check application version >
 sudo apt-cache policy $package_name
