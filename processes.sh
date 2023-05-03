@@ -32,3 +32,8 @@ nohup
 nice
 # Modify priority of a process
 renice
+
+# Enable process start at boot time >
+`sudo systemctl enable $process_name`
+# Disable process start at boot time >
+`sudo systemctl disable $process_name`
